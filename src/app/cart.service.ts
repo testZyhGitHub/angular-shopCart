@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,14 @@ export class CartService {
     this.items = [];
     return this.items;
   }
-  constructor() { }
+
+  getShippingPrices() {
+    return this.http.get('/assets/shipping.json');
+  }
+
+  constructor(
+    // 把 HttpClient 注入到 CartService 组件类的构造函数中：
+    private http: HttpClient
+  ) { }
 
 }
