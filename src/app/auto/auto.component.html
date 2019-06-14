@@ -1,11 +1,14 @@
-<form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
-      <mat-autocomplete #auto="matAutocomplete">
-        <mat-option *ngFor="let option of options" [value]="option">
-          {{option}}
-        </mat-option>
-      </mat-autocomplete>
-    </mat-form-field>
-  </form>
-  
+<mat-toolbar>
+  <mat-toolbar-row>
+   <div><a mat-button [routerLink]="['/']"><img src="../assets/logo-edit.png" height='30' weidth='30'></a></div>
+   <div><a mat-button routerLink=".">Dashboard没路由</a></div>
+   <div><a mat-button routerLink=".">Register没路由</a></div>
+   <div><a mat-button routerLink=".">Develop没路由</a></div>
+   <div><a mat-button routerLink=".">Playground没路由</a></div>
+   <div><a mat-button [routerLink]="['set']">General Setting有路由</a></div>
+   <div><a mat-button routerLink="."><mat-icon class="example-icon" aria-hidden="false">person</mat-icon></a></div>
+   <div><a mat-button routerLink=".">Fast Calibration没路由</a></div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+

@@ -1,7 +1,4 @@
 import {Component} from '@angular/core';
-import {FormControl} from '@angular/forms';
-
-
 
 @Component({
   selector: 'app-auto',
@@ -10,7 +7,4 @@ import {FormControl} from '@angular/forms';
 })
 
 
-export class AutoComponent  {
-  myControl = new FormControl();
-  options: string[] = ['羊肉泡馍', '酸辣凉皮', '螺丝粉']; 
-}
+export class AutoComponent  {}
