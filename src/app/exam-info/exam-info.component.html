@@ -1,0 +1,62 @@
+<h5>Exam Parameter</h5>
+<p>Patient Information</p>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Patient Name" value="Sushi" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Patient ID" value="1234567890123" />
+  </mat-form-field>
+</form>
+<!-- step-1-end -->
+<!-- step-2-start -->
+<mat-form-field>
+  <input
+    matInput
+    [matDatepicker]="picker1"
+    placeholder="Date of Birth"
+    [formControl]="date"
+  />
+  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker #picker1></mat-datepicker>
+</mat-form-field>
+<mat-form-field>
+  <input
+    matInput
+    placeholder="Height"
+    type="number"
+    value="175"
+    class="example-right-align"
+  />
+  <span matSuffix>cm</span>
+</mat-form-field>
+<mat-form-field>
+  <input
+    matInput
+    placeholder="Weight"
+    type="number"
+    value="70"
+    class="example-right-align"
+  />
+  <span matSuffix>kg</span>
+</mat-form-field>
+<mat-radio-group aria-label="Select an option">
+  <p>Gender</p>
+  <mat-radio-button value="1">Male</mat-radio-button>
+  <mat-radio-button value="2">Female</mat-radio-button>
+  <mat-radio-button value="2">Other</mat-radio-button>
+</mat-radio-group>
+
+<p>Study Information</p>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Study ID" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Operator" />
+  </mat-form-field>
+  <mat-form-field class="Requesting Physican">
+    <input matInput placeholder="StudyDescription" />
+  </mat-form-field>
+</form>
+

@@ -1,0 +1,21 @@
+h5 {
+    text-align: center;
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  mat-radio-group{
+      font-size:14px;
+  }
+  
+  .mat-radio-button ~ .mat-radio-button {
+      margin-left: 6px;
+    }
